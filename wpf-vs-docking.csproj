@@ -1,0 +1,89 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <RootNamespace>wpf_vs_docking</RootNamespace>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.Edit.WPF" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.Licensing" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.Shared.WPF" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.Tools.WPF" Version="25.1.39" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\CSharp.png" />
+    <Resource Include="Images\Folder_Collapsed.png" />
+    <Resource Include="Images\Folder_Expanded.png" />
+    <Resource Include="Images\Linked.png" />
+    <Resource Include="Images\Project.png" />
+    <Resource Include="Images\Properties_Collapsed.png" />
+    <Resource Include="Images\Reference.png" />
+    <Resource Include="Images\References_Collapsed.png" />
+    <Resource Include="Images\References_Expanded.png" />
+    <Resource Include="Images\Resources.png" />
+    <Resource Include="Images\Settings.png" />
+    <Resource Include="Images\Solution.png" />
+    <Resource Include="Images\Xaml.png" />
+    <Resource Include="Images\Toolbox.png" />
+    <Resource Include="Images\FindResults.png" />
+    <Resource Include="Images\ErrorList.png" />
+    <Resource Include="Images\FindSymbolResults.png" />
+    <Resource Include="Images\Output.png" />
+    <Resource Include="Images\ClassView.png" />
+    <Resource Include="Images\Properties.png" />
+    <Resource Include="Images\Border.png" />
+    <Resource Include="Images\Button.png" />
+    <Resource Include="Images\Canvas.png" />
+    <Resource Include="Images\CheckBox.png" />
+    <Resource Include="Images\ComboBox.png" />
+    <Resource Include="Images\ContentControl.png" />
+    <Resource Include="Images\DockPanel.png" />
+    <Resource Include="Images\DocumentViewer.png" />
+    <Resource Include="Images\Ellipse.png" />
+    <Resource Include="Images\Expander.png" />
+    <Resource Include="Images\Frame.png" />
+    <Resource Include="Images\Grid.png" />
+    <Resource Include="Images\GridSplitter.png" />
+    <Resource Include="Images\GroupBox.png" />
+    <Resource Include="Images\Label.png" />
+    <Resource Include="Images\ListBox.png" />
+    <Resource Include="Images\ListView.png" />
+    <Resource Include="Images\MediaElement.png" />
+    <Resource Include="Images\Menu.png" />
+    <Resource Include="Images\PasswordBox.png" />
+    <Resource Include="Images\Pointer.png" />
+    <Resource Include="Images\ProgressBar.png" />
+    <Resource Include="Images\RadioButton.png" />
+    <Resource Include="Images\Rectangle.png" />
+    <Resource Include="Images\RichTextBox.png" />
+    <Resource Include="Images\ScrollBar.png" />
+    <Resource Include="Images\ScrollViewer.png" />
+    <Resource Include="Images\Separator.png" />
+    <Resource Include="Images\Slider.png" />
+    <Resource Include="Images\StackPanel.png" />
+    <Resource Include="Images\StatusBar.png" />
+    <Resource Include="Images\TabControl.png" />
+    <Resource Include="Images\TextBlock.png" />
+    <Resource Include="Images\TextBox.png" />
+    <Resource Include="Images\ToolBar.png" />
+    <Resource Include="Images\TreeView.png" />
+    <Resource Include="Images\UniformGrid.png" />
+    <Resource Include="Images\ViewBox.png" />
+    <Resource Include="Images\WindowsFormsHost.png" />
+    <Resource Include="Images\WrapPanel.png" />
+    <Resource Include="Images\Image.png" />
+    <Resource Include="Images\icon.png" />
+    <Resource Include="Images\TransparentBackground.jpg" />
+    <Resource Include="Images\classimg.PNG" />
+    <Resource Include="Images\eventimg.PNG" />
+    <Resource Include="Images\propimg.PNG" />
+    <Resource Include="Images\TabSplitter.png" />
+  </ItemGroup>
+
+</Project>

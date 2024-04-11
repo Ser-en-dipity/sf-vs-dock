@@ -1,0 +1,133 @@
+﻿<Window x:Class="wpf_vs_docking.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:wpf_vs_docking"
+        xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+        mc:Ignorable="d"
+        Title="Visual Studio Dock Windows" Height="828" Width="1026">
+    <Grid>
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <!-- menu -->
+        <syncfusion:MenuAdv Grid.Row="0" Height="25" VerticalAlignment="Top">           
+            <syncfusion:MenuItemAdv Header="File" />
+            <syncfusion:MenuItemAdv Header="Edit" />
+            <syncfusion:MenuItemAdv Header="View "/>           
+            <syncfusion:MenuItemAdv Header="Debug" />
+        </syncfusion:MenuAdv>
+
+        <!-- toolbar -->
+        
+
+        <!--Dock Window Area-->
+        <syncfusion:DockingManager Grid.Row="2" x:Name="DockingManager" UseNativeFloatWindow="True" PersistState="True" UseDocumentContainer="True"
+                                   EnableDocumentToFloatOnDoubleClick="True" IsVS2010DraggingEnabled="True" 
+                                   EnableMouseHoverBackground="False" >
+
+            <!-- Dock window icon -->
+            <syncfusion:DockingManager.Icon>
+                <ImageBrush ImageSource="Images\icon.PNG"/>
+            </syncfusion:DockingManager.Icon>
+
+
+            <!-- SolutionExplorer dock window -->
+			<ContentControl Name="SolutionExplorer" syncfusion:DockingManager.Header="Solution Explorer"
+					        syncfusion:DockingManager.SideInDockedMode="Left"
+					        syncfusion:DockingManager.DesiredWidthInDockedMode="300"
+                            Content="{StaticResource SolutionExplorerTree}">
+				<syncfusion:DockingManager.Icon>
+					<ImageBrush ImageSource="Images\Solution.png" />
+				</syncfusion:DockingManager.Icon>
+			</ContentControl>
+
+            <!-- ClassView dock window -->
+			<ContentControl Name="ClassView" syncfusion:DockingManager.Header="Class View"
+						    syncfusion:DockingManager.SideInDockedMode="Tabbed"
+						    syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer" >
+				<syncfusion:DockingManager.Icon>
+					<ImageBrush ImageSource="Images\ClassView.png" />
+				</syncfusion:DockingManager.Icon>
+			</ContentControl>
+
+            <!-- Properties dock window -->
+			<ContentControl Name="Properties" syncfusion:DockingManager.Header="Properties Window"
+						    syncfusion:DockingManager.SideInDockedMode="Tabbed"
+						    syncfusion:DockingManager.TargetNameInDockedMode="SolutionExplorer" >
+				<syncfusion:DockingManager.Icon>
+					<ImageBrush ImageSource="Images\Properties.png" />
+				</syncfusion:DockingManager.Icon>
+			</ContentControl>
+
+
+            <!-- Output dock window -->
+            <ContentControl Name="Output" syncfusion:DockingManager.Header="Output"
+						    syncfusion:DockingManager.SideInDockedMode="Bottom"
+						    syncfusion:DockingManager.DesiredHeightInDockedMode="230">
+                <syncfusion:DockingManager.Icon>
+                    <ImageBrush ImageSource="Images\Output.png" />
+                </syncfusion:DockingManager.Icon>
+                <ScrollViewer VerticalScrollBarVisibility ="Auto" Name ="Scroll">
+                    <TextBlock Margin="10" Name="Log" >  
+					<!-- Context menu for clear the event -->  
+                        <TextBlock.ContextMenu>
+                          <ContextMenu Name="cm">
+                            <MenuItem Header="Clear" Click="OnClear"/>
+                          </ContextMenu>
+                        </TextBlock.ContextMenu>
+                    </TextBlock>
+                </ScrollViewer>
+            </ContentControl>
+
+            <!-- FindResults dock window -->
+			<ContentControl Name="FindResults" syncfusion:DockingManager.Header="Find Results"
+						    syncfusion:DockingManager.SideInDockedMode="Tabbed"
+                            syncfusion:DockingManager.TargetNameInDockedMode="Output" >
+				<syncfusion:DockingManager.Icon>
+					<ImageBrush ImageSource="Images\FindResults.png" />
+				</syncfusion:DockingManager.Icon>
+				<TextBlock >Find Results 0 , Not Found.</TextBlock>
+			</ContentControl>
+
+            <!-- ErrorList dock window -->
+			<ContentControl Name="ErrorList" syncfusion:DockingManager.Header="Error List"
+						    syncfusion:DockingManager.SideInDockedMode="Tabbed"
+						    syncfusion:DockingManager.TargetNameInDockedMode="Output" >
+				<syncfusion:DockingManager.Icon>
+					<ImageBrush ImageSource="Images\ErrorList.png" />
+				</syncfusion:DockingManager.Icon>
+			</ContentControl>
+
+            <!-- FindSymbolResults dock window -->
+			<ContentControl Name="FindSymbolResults" syncfusion:DockingManager.Header="Find Symbol Results"
+						    syncfusion:DockingManager.SideInDockedMode="Tabbed"
+						    syncfusion:DockingManager.TargetNameInDockedMode="Output" >
+				<syncfusion:DockingManager.Icon>
+					<ImageBrush ImageSource="Images\FindSymbolResults.png" />
+				</syncfusion:DockingManager.Icon>
+			</ContentControl>
+
+
+            
+            <!--XAML View -->
+            <ContentControl Name="MainWindowXAMLView" 
+					        syncfusion:DockingManager.State="Document"
+                            syncfusion:DocumentContainer.MDIBounds="30,30,300,300"
+					        syncfusion:DockingManager.CanFloat="False">
+                
+            </ContentControl>
+
+            <!--CSharp View -->
+            <ContentControl Name="MainWindowCSView" syncfusion:DockingManager.State="Document"
+                            syncfusion:DocumentContainer.MDIBounds="0,0,300,300">
+                
+            </ContentControl>
+
+        </syncfusion:DockingManager>
+    </Grid>
+</Window>
