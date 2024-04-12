@@ -51,7 +51,15 @@
               "target": "Package",
               "version": "[25.1.39, )"
             },
+            "Syncfusion.SfSkinManager.WPF": {
+              "target": "Package",
+              "version": "[25.1.39, )"
+            },
             "Syncfusion.Shared.WPF": {
+              "target": "Package",
+              "version": "[25.1.39, )"
+            },
+            "Syncfusion.Themes.Office2016White.WPF": {
               "target": "Package",
               "version": "[25.1.39, )"
             },

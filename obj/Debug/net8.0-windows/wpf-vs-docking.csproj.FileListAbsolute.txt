@@ -27,3 +27,6 @@ D:\wpf-vs-docking\obj\Debug\net8.0-windows\wpf-vs-docking.genruntimeconfig.cache
 D:\wpf-vs-docking\obj\Debug\net8.0-windows\ref\wpf-vs-docking.dll
 D:\wpf-vs-docking\obj\Debug\net8.0-windows\WPFControls.baml
 D:\wpf-vs-docking\obj\Debug\net8.0-windows\App.baml
+D:\wpf-vs-docking\obj\Debug\net8.0-windows\wpf-vs-docking.sourcelink.json
+D:\wpf-vs-docking\bin\Debug\net8.0-windows\Syncfusion.SfSkinManager.WPF.dll
+D:\wpf-vs-docking\bin\Debug\net8.0-windows\Syncfusion.Themes.Office2016White.WPF.dll

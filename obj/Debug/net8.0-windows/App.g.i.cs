@@ -9,6 +9,7 @@
 //------------------------------------------------------------------------------
 
 using Syncfusion;
+using Syncfusion.SfSkinManager;
 using Syncfusion.Windows;
 using Syncfusion.Windows.Collections;
 using Syncfusion.Windows.ComponentModel;

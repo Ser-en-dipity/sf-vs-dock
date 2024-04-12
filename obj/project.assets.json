@@ -43,6 +43,22 @@
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         }
       },
+      "Syncfusion.SfSkinManager.WPF/25.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "25.1.39"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.Shared.WPF/25.1.39": {
         "type": "package",
         "dependencies": {
@@ -55,6 +71,23 @@
         },
         "runtime": {
           "lib/net6.0-windows7.0/Syncfusion.Shared.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "Syncfusion.Themes.Office2016White.WPF/25.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "25.1.39",
+          "Syncfusion.SfSkinManager.WPF": "25.1.39"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.dll": {
             "related": ".xml"
           }
         }
@@ -156,6 +189,26 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.SfSkinManager.WPF/25.1.39": {
+      "sha512": "jCvdgGBxH//piAI6LiFLqmTJrbMXG9CAPnaO72rtwexFyqHeXdCb4/uqoukepZJp7EbNZgJJD+7SPk6Qaj8K4A==",
+      "type": "package",
+      "path": "syncfusion.sfskinmanager.wpf/25.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net40/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net462/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net462/Syncfusion.SfSkinManager.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfSkinManager.WPF.xml",
+        "syncfusion.sfskinmanager.wpf.25.1.39.nupkg.sha512",
+        "syncfusion.sfskinmanager.wpf.nuspec",
+        "syncfusion_logo.png"
+      ]
+    },
     "Syncfusion.Shared.WPF/25.1.39": {
       "sha512": "M3WlV7DhB6rQH6eJSr9KvECaW/OTiitpxIBuL0BNcMRgdKBe6mfyLwqdQ9VxnTKr1dR4yfRz0DsmxXXROoaUjQ==",
       "type": "package",
@@ -187,6 +240,26 @@
         "syncfusion.shared.wpf.nuspec",
         "syncfusion_logo.png",
         "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
+    "Syncfusion.Themes.Office2016White.WPF/25.1.39": {
+      "sha512": "eETRVNAM81mQbMjFSS4hOdb3Z5zre3gkJH8Iexi8npqtcdYprUMk28LWvrV6ds9wvr4OBPixmIAtcH3h2JpfCA==",
+      "type": "package",
+      "path": "syncfusion.themes.office2016white.wpf/25.1.39",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Syncfusion.Themes.Office2016White.WPF.dll",
+        "lib/net40/Syncfusion.Themes.Office2016White.WPF.xml",
+        "lib/net462/Syncfusion.Themes.Office2016White.WPF.dll",
+        "lib/net462/Syncfusion.Themes.Office2016White.WPF.xml",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.Themes.Office2016White.WPF.xml",
+        "syncfusion.themes.office2016white.wpf.25.1.39.nupkg.sha512",
+        "syncfusion.themes.office2016white.wpf.nuspec",
+        "syncfusion_logo.png"
       ]
     },
     "Syncfusion.Tools.WPF/25.1.39": {
@@ -227,7 +300,9 @@
     "net8.0-windows7.0": [
       "Syncfusion.Edit.WPF >= 25.1.39",
       "Syncfusion.Licensing >= 25.1.39",
+      "Syncfusion.SfSkinManager.WPF >= 25.1.39",
       "Syncfusion.Shared.WPF >= 25.1.39",
+      "Syncfusion.Themes.Office2016White.WPF >= 25.1.39",
       "Syncfusion.Tools.WPF >= 25.1.39"
     ]
   },
@@ -281,7 +356,15 @@
             "target": "Package",
             "version": "[25.1.39, )"
           },
+          "Syncfusion.SfSkinManager.WPF": {
+            "target": "Package",
+            "version": "[25.1.39, )"
+          },
           "Syncfusion.Shared.WPF": {
+            "target": "Package",
+            "version": "[25.1.39, )"
+          },
+          "Syncfusion.Themes.Office2016White.WPF": {
             "target": "Package",
             "version": "[25.1.39, )"
           },
