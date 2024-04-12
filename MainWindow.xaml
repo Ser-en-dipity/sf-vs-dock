@@ -7,6 +7,7 @@
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:sfSkinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
         sfSkinManager:SfSkinManager.VisualStyle="Office2016White"
+        Loaded="Window_font_Loaded"
         mc:Ignorable="d"
         Title="Visual Studio Dock Windows" 
         Height="828" Width="1026">

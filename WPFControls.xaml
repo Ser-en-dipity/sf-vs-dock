@@ -8,9 +8,9 @@
 						  LineBrush="Black" BorderThickness="0"
 						  SelectedValuePath="Header" 
                           AnimationType="None">
-		<syncfusion:TreeViewItemAdv IsExpanded="True" Header="Solution 'TestTreeViewAdv' (3 projects)" LeftImageSource="pack://application:,,,/Images/Solution.png" >
+		<syncfusion:TreeViewItemAdv IsExpanded="True" Header="Solution 工程文件 (3 projects)" LeftImageSource="pack://application:,,,/Images/Solution.png" >
 			
-			<syncfusion:TreeViewItemAdv IsExpanded="true" Header="DockingStudioDemo" LeftImageSource="pack://application:,,,/Images/Project.png">
+			<syncfusion:TreeViewItemAdv IsExpanded="true" Header="new project 1" FontSize="{DynamicResource ControlFontSize}" LeftImageSource="pack://application:,,,/Images/Project.png">
 				<syncfusion:TreeViewItemAdv Header="Properties"  
 								  ExpandedImageSource="pack://application:,,,/Images/References_Expanded.png"
 								  CollapsedImageSource="pack://application:,,,/Images/Properties_Collapsed.png" >
@@ -22,13 +22,13 @@
 						<syncfusion:TreeViewItemAdv Header="Settings.cs" LeftImageSource="pack://application:,,,/Images/Linked.png" />
 					</syncfusion:TreeViewItemAdv>
 				</syncfusion:TreeViewItemAdv>
-                <syncfusion:TreeViewItemAdv Header="References"  
+                <syncfusion:TreeViewItemAdv Header="YB2 280-4W"  
 								  ExpandedImageSource="pack://application:,,,/Images/References_Expanded.png"
 								  CollapsedImageSource="pack://application:,,,/Images/References_Collapsed.png" >
-                    <syncfusion:TreeViewItemAdv Header="Syncfusion.Shared.WPF" LeftImageSource="pack://application:,,,/Images/Project.png" />
-                    <syncfusion:TreeViewItemAdv Header="Syncfusion.Tools.WPF" LeftImageSource="pack://application:,,,/Images/Project.png" />
-                    <syncfusion:TreeViewItemAdv Header="PresentationCore" LeftImageSource="pack://application:,,,/Images/Reference.png" />
-					<syncfusion:TreeViewItemAdv Header="PresentationFramework" LeftImageSource="pack://application:,,,/Images/Reference.png" />
+                    <syncfusion:TreeViewItemAdv Header="参数列表" LeftImageSource="pack://application:,,,/Images/Project.png" />
+                    <syncfusion:TreeViewItemAdv Header="IO设置" LeftImageSource="pack://application:,,,/Images/Project.png" />
+                    <syncfusion:TreeViewItemAdv Header="JOG" LeftImageSource="pack://application:,,,/Images/Reference.png" />
+					<syncfusion:TreeViewItemAdv Header="机械特性分析" LeftImageSource="pack://application:,,,/Images/Reference.png" />
 					<syncfusion:TreeViewItemAdv Header="ReachFramework" LeftImageSource="pack://application:,,,/Images/Reference.png" />
 					<syncfusion:TreeViewItemAdv Header="System" LeftImageSource="pack://application:,,,/Images/Reference.png" />
 					<syncfusion:TreeViewItemAdv Header="System.Data" LeftImageSource="pack://application:,,,/Images/Reference.png" />

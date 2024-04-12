@@ -28,4 +28,20 @@ public partial class MainWindow : RibbonWindow
     {
         Log.Text = "";
     }
+
+    private void Window_font_Loaded(object sender, RoutedEventArgs e)  
+    {  
+        Window MainWindow = Application.Current.MainWindow;
+        PresentationSource MainWindowPresentationSource = PresentationSource.FromVisual(MainWindow);
+        Matrix m = MainWindowPresentationSource.CompositionTarget.TransformToDevice;
+        var thisDpiWidthFactor = m.M11;
+        var thisDpiHeightFactor = m.M22;
+        double ScreenHeight = SystemParameters.PrimaryScreenHeight * thisDpiHeightFactor;
+        double ScreenWidth = SystemParameters.PrimaryScreenWidth * thisDpiWidthFactor;
+        Console.WriteLine("Screen Height: " + ScreenHeight);
+        Console.WriteLine("Screen Width: " + ScreenWidth);
+        double controlsize = ((SystemParameters.PrimaryScreenWidth / 12) / 3 * 2) / 5 * 0.7;  
+        System.Windows.Application.Current.Resources.Remove("ControlFontSize");  
+        System.Windows.Application.Current.Resources.Add("ControlFontSize", controlsize);  
+    }
 }
