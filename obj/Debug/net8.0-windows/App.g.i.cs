@@ -10,6 +10,7 @@
 
 using Syncfusion;
 using Syncfusion.SfSkinManager;
+using Syncfusion.UI.Xaml.Charts;
 using Syncfusion.Windows;
 using Syncfusion.Windows.Collections;
 using Syncfusion.Windows.ComponentModel;

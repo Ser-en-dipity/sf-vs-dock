@@ -7,7 +7,6 @@
         xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
         xmlns:sfSkinManager="clr-namespace:Syncfusion.SfSkinManager;assembly=Syncfusion.SfSkinManager.WPF"
         sfSkinManager:SfSkinManager.VisualStyle="Office2016White"
-        Loaded="Window_font_Loaded"
         mc:Ignorable="d"
         Title="Visual Studio Dock Windows" 
         Height="828" Width="1026">
@@ -113,19 +112,17 @@
 
 
             
-            <!--XAML View -->
-            <ContentControl Name="MainWindowXAMLView" 
+            <!-- <ContentControl Name="MainWindowXAMLView" 
 					        syncfusion:DockingManager.State="Document"
                             syncfusion:DocumentContainer.MDIBounds="30,30,300,300"
 					        syncfusion:DockingManager.CanFloat="False">
                 
             </ContentControl>
 
-            <!--CSharp View -->
             <ContentControl Name="MainWindowCSView" syncfusion:DockingManager.State="Document"
                             syncfusion:DocumentContainer.MDIBounds="0,0,300,300">
                 
-            </ContentControl>
+            </ContentControl> -->
 
         </syncfusion:DockingManager>
     </Grid>

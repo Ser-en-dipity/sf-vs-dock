@@ -10,6 +10,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using System;
 using Syncfusion.Windows.Tools.Controls;
+using System.Windows.Threading;
 
 namespace wpf_vs_docking;
 
@@ -18,10 +19,15 @@ namespace wpf_vs_docking;
 /// </summary>
 public partial class MainWindow : RibbonWindow
 {
+    DispatcherTimer timer = new DispatcherTimer
+    {
+        Interval = new TimeSpan(0, 0, 0, 0, 500),
+        IsEnabled = false
+    };
     public MainWindow()
     {
         InitializeComponent();
-        
+        this.Loaded+=(obj, args) => this.SizeChanged += Window_SizeChanged;
     }
 
     private void OnClear(object sender, EventArgs args)
@@ -29,19 +35,15 @@ public partial class MainWindow : RibbonWindow
         Log.Text = "";
     }
 
-    private void Window_font_Loaded(object sender, RoutedEventArgs e)  
-    {  
-        Window MainWindow = Application.Current.MainWindow;
-        PresentationSource MainWindowPresentationSource = PresentationSource.FromVisual(MainWindow);
-        Matrix m = MainWindowPresentationSource.CompositionTarget.TransformToDevice;
-        var thisDpiWidthFactor = m.M11;
-        var thisDpiHeightFactor = m.M22;
-        double ScreenHeight = SystemParameters.PrimaryScreenHeight * thisDpiHeightFactor;
-        double ScreenWidth = SystemParameters.PrimaryScreenWidth * thisDpiWidthFactor;
-        Console.WriteLine("Screen Height: " + ScreenHeight);
-        Console.WriteLine("Screen Width: " + ScreenWidth);
-        double controlsize = ((SystemParameters.PrimaryScreenWidth / 12) / 3 * 2) / 5 * 0.7;  
-        System.Windows.Application.Current.Resources.Remove("ControlFontSize");  
-        System.Windows.Application.Current.Resources.Add("ControlFontSize", controlsize);  
+    private void Window_SizeChanged (object sender, SizeChangedEventArgs e)
+    {
+        var ah = ActualHeight;
+        var aw = ActualWidth;
+        var h = Height;
+        var w = Width;
+        // Console.WriteLine ("ActualHeight(updated height value): {0}, ActualWidth(updated width value): {1}, Height(before size change): {2}, Width(before size change): {3}", ah, aw, h, w);
+        double controlsize = ((w / 12) / 3 * 2) / 5 * 0.7;
+        System.Windows.Application.Current.Resources.Remove("ControlFontSize");
+        System.Windows.Application.Current.Resources.Add("ControlFontSize", controlsize);
     }
 }

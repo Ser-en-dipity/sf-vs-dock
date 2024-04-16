@@ -43,6 +43,22 @@
           "lib/net8.0/Syncfusion.Licensing.dll": {}
         }
       },
+      "Syncfusion.SfChart.WPF/25.1.39": {
+        "type": "package",
+        "dependencies": {
+          "Syncfusion.Licensing": "25.1.39"
+        },
+        "compile": {
+          "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Syncfusion.SfSkinManager.WPF/25.1.39": {
         "type": "package",
         "dependencies": {
@@ -189,6 +205,37 @@
         "syncfusion_logo.png"
       ]
     },
+    "Syncfusion.SfChart.WPF/25.1.39": {
+      "sha512": "Oi8FLex1CUSb1+P60H89bwhIVew035k1cV/B5MudznPW+nHzpxclUnzqOMx/GsVbAtDHdZZ1/Qh50E1VkV3uDw==",
+      "type": "package",
+      "path": "syncfusion.sfchart.wpf/25.1.39",
+      "hasTools": true,
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.txt",
+        "README.md",
+        "lib/net40/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net40/Design/Syncfusion.SfChart.WPF.DesignTools.dll",
+        "lib/net40/Design/Syncfusion.SfChart.WPF.Expression.Design.dll",
+        "lib/net40/Design/Syncfusion.SfChart.WPF.VisualStudio.Design.dll",
+        "lib/net40/Syncfusion.SfChart.WPF.dll",
+        "lib/net40/Syncfusion.SfChart.WPF.xml",
+        "lib/net462/Design/Syncfusion.Design.Wpf.dll",
+        "lib/net462/Design/Syncfusion.SfChart.WPF.DesignTools.dll",
+        "lib/net462/Design/Syncfusion.SfChart.WPF.Expression.Design.dll",
+        "lib/net462/Design/Syncfusion.SfChart.WPF.VisualStudio.Design.dll",
+        "lib/net462/Syncfusion.SfChart.WPF.dll",
+        "lib/net462/Syncfusion.SfChart.WPF.xml",
+        "lib/net6.0-windows7.0/Design/Syncfusion.SfChart.WPF.DesignTools.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll",
+        "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.xml",
+        "syncfusion.sfchart.wpf.25.1.39.nupkg.sha512",
+        "syncfusion.sfchart.wpf.nuspec",
+        "syncfusion_logo.png",
+        "tools/VisualStudioToolsManifest.xml"
+      ]
+    },
     "Syncfusion.SfSkinManager.WPF/25.1.39": {
       "sha512": "jCvdgGBxH//piAI6LiFLqmTJrbMXG9CAPnaO72rtwexFyqHeXdCb4/uqoukepZJp7EbNZgJJD+7SPk6Qaj8K4A==",
       "type": "package",
@@ -300,6 +347,7 @@
     "net8.0-windows7.0": [
       "Syncfusion.Edit.WPF >= 25.1.39",
       "Syncfusion.Licensing >= 25.1.39",
+      "Syncfusion.SfChart.WPF >= 25.1.39",
       "Syncfusion.SfSkinManager.WPF >= 25.1.39",
       "Syncfusion.Shared.WPF >= 25.1.39",
       "Syncfusion.Themes.Office2016White.WPF >= 25.1.39",
@@ -312,11 +360,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\wpf-vs-docking\\wpf-vs-docking.csproj",
+      "projectUniqueName": "D:\\wpf-mainwindow-design\\sf-vs-dock\\wpf-vs-docking.csproj",
       "projectName": "wpf-vs-docking",
-      "projectPath": "D:\\wpf-vs-docking\\wpf-vs-docking.csproj",
+      "projectPath": "D:\\wpf-mainwindow-design\\sf-vs-dock\\wpf-vs-docking.csproj",
       "packagesPath": "C:\\Users\\i'CNC\\.nuget\\packages\\",
-      "outputPath": "D:\\wpf-vs-docking\\obj\\",
+      "outputPath": "D:\\wpf-mainwindow-design\\sf-vs-dock\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\i'CNC\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -353,6 +401,10 @@
             "version": "[25.1.39, )"
           },
           "Syncfusion.Licensing": {
+            "target": "Package",
+            "version": "[25.1.39, )"
+          },
+          "Syncfusion.SfChart.WPF": {
             "target": "Package",
             "version": "[25.1.39, )"
           },

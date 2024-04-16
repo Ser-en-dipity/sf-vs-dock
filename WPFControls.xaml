@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-	xmlns:syncfusion="http://schemas.syncfusion.com/wpf">
+	xmlns:syncfusion="http://schemas.syncfusion.com/wpf"
+    x:Class="iCNC.Servo.WPFControlsDict">
 
     <!-- Solution Explorer dock window content -->
 	<syncfusion:TreeViewAdv x:Key="SolutionExplorerTree"
@@ -25,7 +26,7 @@
                 <syncfusion:TreeViewItemAdv Header="YB2 280-4W"  
 								  ExpandedImageSource="pack://application:,,,/Images/References_Expanded.png"
 								  CollapsedImageSource="pack://application:,,,/Images/References_Collapsed.png" >
-                    <syncfusion:TreeViewItemAdv Header="参数列表" LeftImageSource="pack://application:,,,/Images/Project.png" />
+                    <syncfusion:TreeViewItemAdv Header="参数列表" LeftImageSource="pack://application:,,,/Images/Project.png" MouseLeftButtonUp="onClickParameters" IsEditable="False"/>
                     <syncfusion:TreeViewItemAdv Header="IO设置" LeftImageSource="pack://application:,,,/Images/Project.png" />
                     <syncfusion:TreeViewItemAdv Header="JOG" LeftImageSource="pack://application:,,,/Images/Reference.png" />
 					<syncfusion:TreeViewItemAdv Header="机械特性分析" LeftImageSource="pack://application:,,,/Images/Reference.png" />

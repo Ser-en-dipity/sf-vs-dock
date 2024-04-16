@@ -12,6 +12,7 @@
   <ItemGroup>
     <PackageReference Include="Syncfusion.Edit.WPF" Version="25.1.39" />
     <PackageReference Include="Syncfusion.Licensing" Version="25.1.39" />
+    <PackageReference Include="Syncfusion.SfChart.WPF" Version="25.1.39" />
     <PackageReference Include="Syncfusion.SfSkinManager.WPF" Version="25.1.39" />
     <PackageReference Include="Syncfusion.Shared.WPF" Version="25.1.39" />
     <PackageReference Include="Syncfusion.Themes.Office2016White.WPF" Version="25.1.39" />

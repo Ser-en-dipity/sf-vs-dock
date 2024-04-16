@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-D:\wpf-vs-docking\obj\Debug\net8.0-windows\
+D:\wpf-mainwindow-design\sf-vs-dock\obj\Debug\net8.0-windows\
 wpf_vs_docking
 none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
-D:\wpf-vs-docking\App.xaml
+D:\wpf-mainwindow-design\sf-vs-dock\App.xaml
 2-1374041306
 
-4371330591
-205-966050549
+5799850157
+206411356035
 MainWindow.xaml;WPFControls.xaml;
 
 False

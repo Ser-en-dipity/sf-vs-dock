@@ -10,6 +10,7 @@
         "dependencies": {
           "Syncfusion.Edit.WPF": "25.1.39",
           "Syncfusion.Licensing": "25.1.39",
+          "Syncfusion.SfChart.WPF": "25.1.39",
           "Syncfusion.SfSkinManager.WPF": "25.1.39",
           "Syncfusion.Shared.WPF": "25.1.39",
           "Syncfusion.Themes.Office2016White.WPF": "25.1.39",
@@ -44,6 +45,17 @@
       "Syncfusion.Licensing/25.1.39": {
         "runtime": {
           "lib/net8.0/Syncfusion.Licensing.dll": {
+            "assemblyVersion": "25.1.39.0",
+            "fileVersion": "25.1.39.0"
+          }
+        }
+      },
+      "Syncfusion.SfChart.WPF/25.1.39": {
+        "dependencies": {
+          "Syncfusion.Licensing": "25.1.39"
+        },
+        "runtime": {
+          "lib/net6.0-windows7.0/Syncfusion.SfChart.WPF.dll": {
             "assemblyVersion": "25.1.39.0",
             "fileVersion": "25.1.39.0"
           }
@@ -123,6 +135,13 @@
       "sha512": "sha512-i8krFQ2ElmL27dOwoPwwi8BZBX9hxaVgXVeVQZMvHp/U5k9Pn0UDp7/edzDkLmsIQFZHXx1J56VxR+4T+UKarA==",
       "path": "syncfusion.licensing/25.1.39",
       "hashPath": "syncfusion.licensing.25.1.39.nupkg.sha512"
+    },
+    "Syncfusion.SfChart.WPF/25.1.39": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-Oi8FLex1CUSb1+P60H89bwhIVew035k1cV/B5MudznPW+nHzpxclUnzqOMx/GsVbAtDHdZZ1/Qh50E1VkV3uDw==",
+      "path": "syncfusion.sfchart.wpf/25.1.39",
+      "hashPath": "syncfusion.sfchart.wpf.25.1.39.nupkg.sha512"
     },
     "Syncfusion.SfSkinManager.WPF/25.1.39": {
       "type": "package",
